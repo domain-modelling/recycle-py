@@ -1,8 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask
+
+from datetime import datetime
 
 app = Flask(__name__)
 
-# This is a sample Python script.
 @app.get("/validate")
 def validate():
     return "hi"
@@ -11,7 +12,7 @@ def validate():
 def handle_command():
     return {
         "event_id": "foo",
-        "created_at": "new Date().toISOString()",
+        "created_at": datetime.now().isoformat(),
         "type": "PriceWasCalculated",
         "payload": {
             "person_id": "Tom",
