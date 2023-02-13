@@ -2,12 +2,16 @@
 
 ## Installation
 
-### Create a virtual environment and activate it
-`python3 -m venv _env`
-`source _env/bin/activate`
+Create a virtual environment and activate it
+```bash
+python3 -m venv _env
+source _env/bin/activate
+```
 
-### Install all requirements
-`pip install -r requirements.txt`
+Install all requirements
+```bash
+pip install -r requirements.txt
+```
 
 ## Running
 `python ./main.py`
